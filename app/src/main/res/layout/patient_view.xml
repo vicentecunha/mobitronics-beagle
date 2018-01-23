@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        android:layout_marginTop="@dimen/id_topMargin"
+        android:layout_marginBottom="@dimen/id_topMargin"
+        android:text="@string/_0001"
+        android:textSize="@dimen/id_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/id_tv"
+        app:layout_constraintTop_toTopOf="@id/id_tv"
+        app:layout_constraintBottom_toBottomOf="@id/id_tv"
+        android:text="@string/john_doe"
+        android:textSize="@dimen/names_textSize"
+        android:layout_marginLeft="@dimen/names_leftMargin"
+        android:layout_marginStart="@dimen/names_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/dob_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/name_tv"
+        app:layout_constraintTop_toTopOf="@id/name_tv"
+        android:text="@string/data_de_nascimento"
+        android:textSize="@dimen/dates_textSize"
+        android:layout_marginLeft="@dimen/names_leftMargin"
+        android:layout_marginStart="@dimen/names_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/dolt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dob_tv"
+        app:layout_constraintLeft_toLeftOf="@id/dob_tv"
+        app:layout_constraintBottom_toBottomOf="@id/name_tv"
+        android:text="@string/data_do_ultimo_teste"
+        android:textSize="@dimen/dates_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/therapyCount_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dob_tv"
+        app:layout_constraintBottom_toBottomOf="@id/name_tv"
+        android:text="@string/numero_de_terapias_16"
+        android:textSize="@dimen/dates_textSize"
+        android:layout_marginLeft="@dimen/names_leftMargin"
+        android:layout_marginStart="@dimen/names_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/therapyCount_tv"
+        app:layout_constraintTop_toTopOf="@id/name_tv"
+        android:text="@string/genero_masculino"
+        android:textSize="@dimen/dates_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/history_iv"
+        android:layout_width="@dimen/patientIcon_size"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toRightOf="@id/therapyCount_tv"
+        android:src="@drawable/ic_history_black_48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/patientIcon_leftMargin"
+        android:layout_marginStart="@dimen/patientIcon_leftMargin"/>
+
+    <ImageView
+        android:id="@+id/therapy_iv"
+        android:layout_width="@dimen/patientIcon_size"
+        android:layout_height="64dp"
+        app:layout_constraintLeft_toRightOf="@id/history_iv"
+        android:src="@drawable/ic_accessibility_black_48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/patientIcon_leftMargin"
+        android:layout_marginStart="@dimen/patientIcon_leftMargin"/>
+
+</android.support.constraint.ConstraintLayout>

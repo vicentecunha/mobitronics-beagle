@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_item"
+        android:title="@string/novo_paciente"
+        android:icon="@drawable/ic_note_add_black_48dp"
+        app:showAsAction="ifRoom"
+        android:onClick="add_newPatient"/>
+    <item
+        android:id="@+id/therapy_item"
+        android:title="@string/terapia"
+        android:icon="@drawable/ic_accessibility_black_48dp"
+        app:showAsAction="ifRoom"
+        android:onClick="goto_therapy"/>
+</menu>

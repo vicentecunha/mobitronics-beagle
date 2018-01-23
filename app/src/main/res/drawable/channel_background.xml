@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/channel_bg_radius"/>
+    <padding
+        android:left="@dimen/channel_bg_padding"
+        android:top="@dimen/channel_bg_padding"
+        android:right="@dimen/channel_bg_padding"
+        android:bottom="@dimen/channel_bg_padding" />
+    <solid android:color="@color/colorPrimary"/>
+    <stroke
+        android:width="@dimen/channel_bg_stroke"
+        android:color="@color/colorPrimaryDark" />
+</shape>

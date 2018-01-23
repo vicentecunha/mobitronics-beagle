@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/channel_background">
+
+    <TextView
+        android:id="@+id/channelName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/canal_1a"
+        android:textSize="@dimen/channelView_textSize"/>
+
+    <TextView
+        android:id="@+id/intensity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/channelName_tv"
+        android:text="@string/intensity"
+        android:textSize="@dimen/channelView_textSize"/>
+
+    <TextView
+        android:id="@+id/frequency_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/intensity_tv"
+        android:text="@string/frequency"
+        android:textSize="@dimen/channelView_textSize"/>
+
+    <TextView
+        android:id="@+id/width_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frequency_tv"
+        android:text="@string/largura_de_pulso"
+        android:textSize="@dimen/channelView_textSize"/>
+
+</android.support.constraint.ConstraintLayout>

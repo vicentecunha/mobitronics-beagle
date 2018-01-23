@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vcc.vicente.mobitronics.TherapyExecution_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/execucao_de_terapia"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_1a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:channelName="@string/canal_1a"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"
+        android:layout_marginTop="@dimen/exam_channels_margin"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_1b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_1a"
+        app:layout_constraintLeft_toRightOf="@id/channel_1a"
+        app:channelName="@string/canal_1b"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin" />
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_2a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_1b"
+        app:layout_constraintLeft_toRightOf="@id/channel_1b"
+        app:channelName="@string/canal_2a"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_2b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_2a"
+        app:layout_constraintLeft_toRightOf="@id/channel_2a"
+        app:channelName="@string/canal_2b"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/channel_1a"
+        app:layout_constraintLeft_toLeftOf="@id/channel_1a"
+        app:channelName="@string/canal_3a"
+        android:layout_marginTop="@dimen/exam_channels_margin"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_3b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_3a"
+        app:layout_constraintLeft_toRightOf="@id/channel_3a"
+        app:channelName="@string/canal_3b"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin" />
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_4a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_3b"
+        app:layout_constraintLeft_toRightOf="@id/channel_3b"
+        app:channelName="@string/canal_4a"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"/>
+
+    <com.vcc.vicente.mobitronics.ChannelView
+        android:id="@+id/channel_4b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/channel_4a"
+        app:layout_constraintLeft_toRightOf="@id/channel_4a"
+        app:channelName="@string/canal_4b"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"/>
+
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tempo_total"
+        app:layout_constraintTop_toBottomOf="@id/channel_3a"
+        app:layout_constraintLeft_toLeftOf="@id/channel_3a"
+        android:layout_marginTop="@dimen/exam_channels_margin"
+        android:textSize="@dimen/exam_small_textSize"/>
+
+    <TextView
+        android:id="@+id/timeCounter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_00_00"
+        app:layout_constraintTop_toBottomOf="@id/time_tv"
+        app:layout_constraintLeft_toLeftOf="@id/time_tv"
+        android:textSize="@dimen/exam_big_textSize"/>
+
+    <ImageView
+        android:id="@+id/play_iv"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_play_circle_outline_black_48dp"
+        app:layout_constraintLeft_toRightOf="@id/timeCounter_tv"
+        app:layout_constraintTop_toTopOf="@id/timeCounter_tv"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"
+        android:onClick="playHandler"/>
+
+    <ImageView
+        android:id="@+id/pause_iv"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_pause_circle_outline_black_48dp"
+        app:layout_constraintLeft_toRightOf="@id/play_iv"
+        app:layout_constraintTop_toTopOf="@id/play_iv"
+        android:layout_marginLeft="@dimen/exam_channels_margin"
+        android:layout_marginStart="@dimen/exam_channels_margin"
+        android:visibility="invisible"
+        android:onClick="pauseHandler"/>
+
+</android.support.constraint.ConstraintLayout>

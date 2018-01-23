@@ -1,0 +1,12 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.vcc.vicente.mobitronics.ChannelSettings_Activity">
+    <item
+        android:id="@+id/add_item"
+        android:title="@string/start_test"
+        android:icon="@drawable/ic_play_arrow_black_48dp"
+        app:showAsAction="ifRoom"
+        android:onClick="goto_exam"/>
+</menu>

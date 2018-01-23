@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="newPatient_textSize">32sp</dimen>
+    <dimen name="titles_textSize">32sp</dimen>
+    <dimen name="id_textSize">32sp</dimen>
+    <dimen name="names_textSize">32sp</dimen>
+    <dimen name="dates_textSize">16sp</dimen>
+    <dimen name="names_leftMargin">16dp</dimen>
+    <dimen name="dates_leftMargin">16dp</dimen>
+    <dimen name="id_topMargin">16dp</dimen>
+    <dimen name="newPatient_leftMargin">32dp</dimen>
+    <dimen name="newPatient_topMargin">32dp</dimen>
+    <dimen name="patientIcon_size">64dp</dimen>
+    <dimen name="patientIcon_leftMargin">16dp</dimen>
+    <dimen name="times_leftMargin">32dp</dimen>
+    <dimen name="therapy_textSize">32sp</dimen>
+    <dimen name="therapy_margin">32dp</dimen>
+    <dimen name="isopowerpoint_margin">32dp</dimen>
+    <dimen name="bar_height">32dp</dimen>
+    <dimen name="bar_text_size">16sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="channelView_textSize">24sp</dimen>
+    <dimen name="exam_channels_margin">16dp</dimen>
+    <dimen name="channel_bg_radius">8dp</dimen>
+    <dimen name="channel_bg_padding">16dp</dimen>
+    <dimen name="channel_bg_stroke">4dp</dimen>
+    <dimen name="exam_small_textSize">32sp</dimen>
+    <dimen name="exam_big_textSize">128sp</dimen>
+    <dimen name="therapy_big_margin">128dp</dimen>
+</resources>

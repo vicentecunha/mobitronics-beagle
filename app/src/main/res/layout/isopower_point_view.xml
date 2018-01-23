@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/therapy_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/time_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/therapy_textSize"
+        app:layout_constraintLeft_toRightOf="@id/title_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/title_tv"
+        android:layout_marginLeft="@dimen/isopowerpoint_margin"
+        android:layout_marginStart="@dimen/isopowerpoint_margin"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="number"
+        android:ems="2"/>
+
+    <TextView
+        android:id="@+id/timeUnit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/time_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/time_et"
+        android:text="@string/min"
+        android:textSize="@dimen/therapy_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/load_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/timeUnit_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/title_tv"
+        android:layout_marginLeft="@dimen/isopowerpoint_margin"
+        android:layout_marginStart="@dimen/isopowerpoint_margin"
+        android:textSize="@dimen/therapy_textSize"
+        android:textColor="@color/colorPrimaryDark"
+        android:inputType="number"
+        android:ems="2"/>
+
+    <TextView
+        android:id="@+id/loadUnit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/load_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/load_et"
+        android:textSize="@dimen/therapy_textSize"
+        android:text="@string/W"
+        android:textColor="@color/colorPrimaryDark" />
+
+</android.support.constraint.ConstraintLayout>

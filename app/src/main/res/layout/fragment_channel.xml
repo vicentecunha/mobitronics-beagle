@@ -1,0 +1,107 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vcc.vicente.mobitronics.ChannelSettings_Activity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/intensity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/intensity"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintVertical_bias="0.33"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/loadUnit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/load_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/load_et"
+        android:text="@string/unidade"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/frequency_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/intensity_tv"
+        app:layout_constraintLeft_toLeftOf="@id/intensity_tv"
+        android:text="@string/frequency"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/frequencyUnit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/frequency_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/frequency_et"
+        android:text="@string/hz"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:id="@+id/pulse_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/frequency_tv"
+        app:layout_constraintLeft_toLeftOf="@id/frequency_tv"
+        android:text="@string/largura_de_pulso"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/pulse_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pulse_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/pulse_tv"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="3"
+        android:textSize="32sp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/pulseUnit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/pulse_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/pulse_et"
+        android:text="@string/unidade"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="32sp"/>
+
+    <EditText
+        android:id="@+id/frequency_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/pulse_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/frequency_tv"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="3"
+        android:textSize="32sp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/load_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/frequency_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/intensity_tv"
+        android:textColor="@color/colorPrimaryDark"
+        android:ems="3"
+        android:textSize="32sp"
+        android:inputType="number"/>
+
+</android.support.constraint.ConstraintLayout>

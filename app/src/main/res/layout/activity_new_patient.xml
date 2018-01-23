@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vcc.vicente.mobitronics.NewPatient_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Cadastrar Novo Paciente"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_toolbar"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:text="@string/nome"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginTop="@dimen/newPatient_topMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/name_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_tv"
+        android:hint="@string/nome_do_paciente"
+        android:textSize="@dimen/newPatient_textSize"
+        android:inputType="textPersonName"
+        android:ems="7"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/id_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/name_et"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_tv"
+        android:text="@string/id"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginLeft="@dimen/newPatient_leftMargin"
+        android:layout_marginStart="@dimen/newPatient_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/id_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/id_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/id_tv"
+        android:hint="@string/id_do_paciente"
+        android:textSize="@dimen/newPatient_textSize"
+        android:inputType="number"
+        android:ems="6"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/dob_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:text="@string/data_de_nascimento_"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginTop="@dimen/newPatient_topMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/dob_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dob_tv"
+        app:layout_constraintBaseline_toBaselineOf="@id/dob_tv"
+        android:hint="@string/dd_mm_aaaa"
+        android:textSize="@dimen/newPatient_textSize"
+        android:enabled="false"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <ImageButton
+        android:id="@+id/calendar_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/dob_et"
+        app:layout_constraintBottom_toBottomOf="@id/dob_et"
+        android:src="@drawable/ic_date_range_black_24dp"
+        android:onClick="showDatePickerDialog" />
+
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/calendar_ib"
+        app:layout_constraintBaseline_toBaselineOf="@id/dob_tv"
+        android:text="@string/genero"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginLeft="@dimen/newPatient_leftMargin"
+        android:layout_marginStart="@dimen/newPatient_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/gender_tv"
+        app:layout_constraintBottom_toBottomOf="@id/gender_tv"
+        android:orientation="horizontal"
+        android:textColor="@color/colorPrimaryDark">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino"
+            android:textSize="@dimen/newPatient_textSize"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masculino"
+            android:textSize="@dimen/newPatient_textSize"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/mainDiagnostic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dob_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:text="@string/diagnostico_principal"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginTop="@dimen/newPatient_topMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/mainDiagnostic_et"
+        android:layout_width="512dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mainDiagnostic_tv"
+        app:layout_constraintLeft_toLeftOf="@id/mainDiagnostic_tv"
+        android:textSize="@dimen/newPatient_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/observations_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/mainDiagnostic_tv"
+        app:layout_constraintLeft_toRightOf="@id/mainDiagnostic_et"
+        android:text="@string/observacoes"
+        android:textSize="@dimen/newPatient_textSize"
+        android:layout_marginLeft="@dimen/newPatient_leftMargin"
+        android:layout_marginStart="@dimen/newPatient_leftMargin"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <EditText
+        android:id="@+id/observations_et"
+        android:layout_width="512dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/observations_tv"
+        app:layout_constraintLeft_toLeftOf="@id/observations_tv"
+        android:textSize="@dimen/newPatient_textSize"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</android.support.constraint.ConstraintLayout>

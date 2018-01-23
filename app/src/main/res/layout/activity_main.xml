@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vcc.vicente.mobitronics.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mobitronics_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"/>
+
+    <ImageView
+        android:id="@+id/therapy_iv"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/ic_accessibility_black_48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintTop_toBottomOf="@id/logo_iv"
+        android:onClick="goto_patientList"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/therapy_iv"
+        app:layout_constraintLeft_toLeftOf="@+id/therapy_iv"
+        app:layout_constraintRight_toRightOf="@+id/therapy_iv"
+        android:text="@string/pacientes"
+        android:textSize="@dimen/titles_textSize"/>
+
+    <ImageView
+        android:id="@+id/history_iv"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/ic_history_black_48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintTop_toBottomOf="@id/logo_iv"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/history_iv"
+        app:layout_constraintLeft_toLeftOf="@+id/history_iv"
+        app:layout_constraintRight_toRightOf="@+id/history_iv"
+        android:text="@string/historico"
+        android:textSize="@dimen/titles_textSize"/>
+
+</android.support.constraint.ConstraintLayout>

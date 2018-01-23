@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IsopowerPointView">
+        <attr name="title" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ChannelView">
+        <attr name="channelName" format="string"/>
+    </declare-styleable>
+</resources>
